@@ -1,0 +1,3 @@
+[submodule "mothertongues"]
+	path = mothertongues
+	url = https://github.com/MotherTongues/mothertongues.git

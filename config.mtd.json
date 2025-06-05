@@ -1,15 +1,19 @@
 {
     "config": {
-        "L1": "YourLanguage",
+        "L1": "Diné",
         "L2": "English",
         "l1_search_strategy": "weighted_levenstein",
         "l2_search_strategy": "liblevenstein_automata",
         "l1_search_config": {
-            "insertionCost": 1.0,
-            "deletionCost": 1.0,
+            "insertionCost": 0.01,
+            "deletionCost": 0.75,
             "insertionAtBeginningCost": 1.0,
             "deletionAtEndCost": 1.0,
-            "substitutionCosts": {},
+            "substitutionCosts": {
+                "l": {
+                    "ł": 0.1
+                }
+            },
             "defaultSubstitutionCost": 1.0
         },
         "l1_stemmer": "none",
@@ -18,7 +22,7 @@
             "lower": true,
             "unicode_normalization": "NFC",
             "remove_punctuation": "[.,/#!$%^&?*';:{}=\\-_`~()]",
-            "remove_combining_characters": true
+            "remove_combining_characters": false
         },
         "l2_normalization_transducer": {
             "lower": true,
@@ -29,59 +33,45 @@
         "alphabet": [
             "a",
             "b",
-            "c",
+            "ch",
+            "ch'",
             "d",
+            "dl",
+            "dz",
             "e",
-            "f",
             "g",
+            "gh",
             "h",
+            "hw",
             "i",
             "j",
             "k",
+            "k'",
+            "kw",
             "l",
+            "ł",
             "m",
             "n",
             "o",
-            "p",
-            "q",
-            "r",
             "s",
+            "sh",
             "t",
-            "u",
-            "v",
+            "t'",
+            "tł",
+            "tł'",
+            "ts",
+            "ts'",
             "w",
             "x",
             "y",
             "z",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z"
+            "zh",
+            "'"
         ],
         "optional_field_name": "Optional Field",
-        "build": "1694556630",
+        "aboutPageImg": "https://placehold.co/600x400",
+        "aboutPageDescription": "Please change this text to describe your dictionary in a bit more detail.",
+        "build": "1748897530",
         "no_sort_characters": [],
         "sorting_field": "word",
         "l1_keys_to_index": [
@@ -99,17 +89,20 @@
             "definition"
         ]
     },
-    "data": [{
-        "manifest": {
-            "file_type": "csv",
-            "name": "YourData",
-            "skip_header": false,
-            "transducers": [],
-            "targets": {
-                "word": "0",
-                "definition": "1"
-            }
-        },
-        "resource": "data.csv"
-    }]
+    "data": [
+        {
+            "manifest": {
+                "file_type": "xlsx",
+                "name": "YourData",
+                "skip_header": false,
+                "transducers": [],
+                "targets": {
+                    "word": "A",
+                    "definition": "B",
+                    "source": ""
+                }
+            },
+            "resource": "data.xlsx"
+        }
+    ]
 }

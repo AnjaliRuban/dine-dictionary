@@ -5,15 +5,11 @@
         "l1_search_strategy": "weighted_levenstein",
         "l2_search_strategy": "liblevenstein_automata",
         "l1_search_config": {
-            "insertionCost": 0.01,
-            "deletionCost": 0.75,
-            "insertionAtBeginningCost": 1.0,
+            "insertionCost": 0.7,
+            "deletionCost": 0.5,
+            "insertionAtBeginningCost": 0.7,
             "deletionAtEndCost": 1.0,
-            "substitutionCosts": {
-                "l": {
-                    "ł": 0.1
-                }
-            },
+            "substitutionCostsPath": "weights.csv",
             "defaultSubstitutionCost": 1.0
         },
         "l1_stemmer": "none",
@@ -21,7 +17,7 @@
         "l1_normalization_transducer": {
             "lower": true,
             "unicode_normalization": "NFC",
-            "remove_punctuation": "[.,/#!$%^&?*';:{}=\\-_`~()]",
+            "remove_punctuation": "[.,/#!$%^&?*;:{}=\\-_`~()]",
             "remove_combining_characters": false
         },
         "l2_normalization_transducer": {
@@ -70,7 +66,7 @@
         ],
         "optional_field_name": "Optional Field",
         "aboutPageImg": "https://placehold.co/600x400",
-        "aboutPageDescription": "Please change this text to describe your dictionary in a bit more detail.",
+        "aboutPageDescription": "Diné dictionary constructed using data collected by researchers at Navajo Tech University.",
         "build": "1748897530",
         "no_sort_characters": [],
         "sorting_field": "word",

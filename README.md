@@ -18,7 +18,7 @@ First, install the prereqs for this project.
 First, _clone_ this repo into your computer using the following command.
 
 ```
-git clone --recurse-submodules --remote-submodules <repo-URL> https://github.com/AnjaliRuban/dine-dictionary
+git clone --recurse-submodules --remote-submodules https://github.com/AnjaliRuban/dine-dictionary
 ```
 
 Now you should have all the files you need except the data files, which have been omitted for privacy.
@@ -42,7 +42,7 @@ Now the command `mothertongues` is available through the terminal.
 To run the local version of the dictionary, navigate to the top of our repo (using `cd ..`) and run the following. Make sure you have put your `data.xlsx` file in the folder!
 
 ```
-mothertongues build-and-run config.mtd.json
+c
 ```
 
 Openning up any brower and navigating to `http://localhost:3636` should pull up your dictionary!

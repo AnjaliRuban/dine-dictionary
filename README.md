@@ -15,11 +15,6 @@ First, install the prereqs for this project.
 - **Python 3.8+**: Follow the instructions [here](https://www.python.org/downloads/).
 - **NodeJS 16+**: `pip install nodejs`
 
-```
-
-curl -sSL https://install.python-poetry.org | python3 -
-```
-
 First, _clone_ this repo into your computer using the following command.
 
 ```

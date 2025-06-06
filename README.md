@@ -13,12 +13,13 @@ First, install the prereqs for this project.
 
 - **Git**: Follow the instructions [here](https://github.com/git-guides/install-git).
 - **Python 3.8+**: Follow the instructions [here](https://www.python.org/downloads/).
-- **NodeJS 16+**: `pip install nodejs`
+- **NodeJS 16+**: Follow the instructions [here](https://nodejs.org/en/download/).
 
 First, _clone_ this repo into your computer using the following command.
 
 ```
 git clone --recurse-submodules --remote-submodules https://github.com/AnjaliRuban/dine-dictionary
+cd dine-dictionary
 ```
 
 Now you should have all the files you need except the data files, which have been omitted for privacy.
